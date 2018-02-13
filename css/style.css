@@ -1,10 +1,15 @@
 body {
-	font-family: 'Muli', sans-serif; 
-	font-size: 16px
+	font-family: 'Muli', sans-serif;
+	font-size: 16px;
 }
 
-.camp-header {
-	background: #DEECE2 url('../img/placeholder.png') 50% 0px; 
-	background-repeat: no-repeat; 
-	height:500px
+.jumbotron {
+	background-color: #DEECE2;
+	min-height: 100vh !important;
+}
+
+.header-bottom {
+	position: absolute;
+	bottom: 0;
+	color: "#DFE1D4"
 }
