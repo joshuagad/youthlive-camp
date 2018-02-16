@@ -9,16 +9,32 @@
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 
-<body>
+<!-- <body data-spy="scroll" data-target="#navbar"> -->
+<body data-spy="scroll" data-target="#navbar">
   <!-- <div class="container-fluid">
     <div class="row"> -->
       <!-- <div id="camp" class="col-12 col-lg-8 banner text-center text-white d-flex"> -->
-      <div id="camp" class="col-12 banner text-center text-white d-flex">
-        <div class="container my-auto">
-          <!-- <img class="camp-logo mx-auto" src="img/camp-logo.svg" />
-          <img class="arrow-down position-absolute mx-auto" src="img/arrow.svg" /> -->
-        </div>
-      </div>
+  <div id="camp" class="col-12 banner text-center text-white d-flex">
+    <div class="container my-auto">
+      <!-- <img class="camp-logo mx-auto" src="img/camp-logo.svg" />
+      <img class="arrow-down position-absolute mx-auto" src="img/arrow.svg" /> -->
+    </div>
+  </div>
+
+  <!-- <nav id="navbar" class="sticky-top navbar navbar-dark bg-dark" style="margin-top: -56px">
+    <a class="navbar-brand" href="#"><img src="img/youth-logo.svg" height="27px" /></a>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="#aboutcamp">CampLIVE</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#details">Details</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#faqs">FAQs</a>
+      </li>
+    </ul>
+  </nav> -->
 
       <div id="aboutcamp" class="col-12 pt-3 text-center my-5">
         <div class="container">
@@ -41,7 +57,7 @@
               <p>Early Bird: P1000
                 <br>Until May 6, 2018
               </p>
-              <button class="btn btn-outline-danger text-uppercase mb-3">Register</button>
+              <a href="#hsregform" class="btn btn-outline-danger text-uppercase mb-3" role="button" data-toggle="collapse" data-target="#hsregform" aria-expanded="false" aria-controls="hsregform">Register</a>
             </div>
             <div class="col-12 col-md-6 text-uppercase mb-3">
               <h2 class="text-lowercase">college camp</h3>
@@ -56,6 +72,75 @@
               <button class="btn btn-outline-dark text-uppercase mb-3" style="white-space: normal" disabled>Registration not yet open</button>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div id="hsregform" class="text-center">
+        <div class="container py-5">
+          <h2 class="text-lowercase pb-4">register for hs camp</h2>
+          <form class="row text-left">
+            <div class="col-12">
+              <!-- <h5 class="text-uppercase">Personal Details</h5> -->
+              <div class="form-row">
+                <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3">
+                  <label for="first_name">First Name</label>
+                  <input type="text" class="form-control" id="first_name" placeholder="First Name">
+                </div>
+                <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3">
+                  <label for="last_name">Last Name</label>
+                  <input type="text" class="form-control" id="last_name" placeholder="Last Name">
+                </div>
+                <div class="form-group col-12 col-sm-6 col-md-4">
+                  <label for="nickname">Nickname</label>
+                  <input type="text" class="form-control" id="nickname" placeholder="Nickname">
+                </div>
+                <div class="form-group col-12 col-sm-6 col-md-3">
+                  <label for="last_name">Birthday</label>
+                  <input type="date" class="form-control" id="birthdate" placeholder="dd/mm/yyyy">
+                </div>
+                <div class="form-group col-12 col-sm-6">
+                  <label for="gender">Gender</label>
+                  <div class="input-group" id="gender">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <input type="radio" name="gender" aria-label="Male">
+                      </div>
+                    </div>
+                    <input disabled type="text" class="form-control" aria-label="Male" placeholder="Male">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <input type="radio" name="gender" aria-label="Female">
+                      </div>
+                    </div>
+                    <input disabled type="text" class="form-control" aria-label="Feale" placeholder="Female">
+                  </div>
+                </div>
+                <div class="form-group col-12 col-md-3">
+                  <label for="school">School</label>
+                  <input type="text" class="form-control" id="school" placeholder="School name">
+                </div>
+                <div class="form-group col-4 col-md-3">
+                  <label for="year">Year</label>
+                  <input type="text" class="form-control" id="year" placeholder="Dropdown">
+                </div>
+                <div class="form-group col-8 col-md-3">
+                  <label for="course">Course/Track</label>
+                  <input type="text" class="form-control" id="course" placeholder="Course or track">
+                </div>
+                <div class="form-group col-12 col-md-3">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="form-group col-12 col-md-3">
+                  <label for="mobileno">Mobile No.</label>
+                  <input type="text" class="form-control" id="mobileno" placeholder="09XX-XXX-XXXX">
+                </div>
+              </div>
+            <!-- <button type="submit" class="btn btn-primary">Register</button> -->
+            </div>
+
+
+          </form>
         </div>
       </div>
 
@@ -144,6 +229,26 @@
       </a></span>
     </div>
   </div>
+
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function(){
+    $("a").on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+          window.location.hash = hash;
+        });
+      }
+    });
+  });
+  </script>
 </body>
 
 </html>

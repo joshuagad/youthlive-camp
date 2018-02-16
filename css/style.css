@@ -61,3 +61,13 @@ body {
 .question {
 	font-weight: 700
 }
+
+#hsregform {
+	background-color: #DEECE2;
+	/* height: 100vh; */
+}
+
+input.form-control:disabled {
+	color: #000000;
+	background-color: #ffffff;
+}
