@@ -5,7 +5,7 @@ body {
 
 @media (min-width: 576px) {
   #details {
-		font-size: 0.8rem;
+		font-size: 1rem;
 	}
 }
 
@@ -22,6 +22,7 @@ body {
 #camp.banner {
   background-image: url("../img/banner-v2.png");
 	height: 100vh;
+	position: relative;
 }
 
 @media (min-width: 576px) {
@@ -47,15 +48,15 @@ body {
 	padding-top: 1rem;
 }
 
-.camp-logo {
-  width: 100%;
-	max-width: 540px;
-}
 
 .arrow-down {
-	height: 30px;
+	position: absolute;
 	bottom: 0;
-	margin-bottom: 5rem;
+	margin-bottom: 5%;
+	width: 30px;
+	margin-left: -15px;
+	/* bottom: 0;
+	margin-bottom: 4rem; */
 }
 
 .question {
