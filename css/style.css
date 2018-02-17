@@ -58,7 +58,8 @@ body {
 }
 
 a.question {
-	font-weight: 700
+	font-weight: 700;
+	margin-top: 20px;
 }
 
 a.question > p {
