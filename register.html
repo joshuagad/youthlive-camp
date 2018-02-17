@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HS Camp Sign-up | CampLIVE: Verified</title>
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<!-- Bootstrap Datepicker plugin -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+</head>
+<body>
+	<div class="container mt-3">
+ 		<div id="form-header" class="col-12 text-center">
+ 			<h3>High School Camp Sign-Up Form</h3>
+ 			<p>Hello! This is the first step on signing-up for CampLIVE: Verified. Please fill up this form with the necessary information. Afterwards, print the pdf, let your parents sign the consent form, and pay for the camp fee! See you in camp! TEMPORARY TEXT</p>
+ 		</div>
+ 		<div id="form-body" class="col-12">
+ 			<form>
+ 				<h4>General Details</h4>
+ 				<label class="control-label">Name</label>
+				<div class="row">
+    				<div class="col-sm">
+      					<input type="text" class="form-control" id="inputFirstname" name="first_name" placeholder="First name">
+    				</div>
+    				<div class="col-sm">
+    					<input type="text" class="form-control" id="inputNickname" name="nickname"  placeholder="Nickname">
+    				</div>
+    				<div class="col-sm">
+      					<input type="text" class="form-control" id="inputLastname" name="last_name"  placeholder="Last name">
+    				</div>
+    				<div class="col-sm">
+    					<input type="text" class="form-control" placeholder="Middle initial">
+    				</div>
+  				</div>
+  				<div class="row">
+  					<div class="col-sm">
+        					<label class="control-label col-form-label" for="birthdate">Birthday</label>
+        					<input class="form-control" id="inputBirthdate" name="date" placeholder="MM/DD/YYY" type="text"/>
+  					</div>
+  					<div class="col-sm">
+  						<label class="control-label col-form-label">Gender</label>
+  						<div class="form-check">
+  							<input class="form-check-input" type="radio" name="inputGender" id="inputGender" value="male" checked>
+  							<label class="form-check-label" for="inputGender1">Male</label>
+  						</div>
+  						<div class="form-check">
+  							<input class="form-check-input" type="radio" name="inputGender" id="inputGender2" value="female">
+  							<label class="form-check-label" for="inputGender2">Female</label>
+						</div>
+  					</div>
+  				</div>
+  				<div class="row">
+  					<div class="col-sm">
+  						<label class="form-check-label" for="inputSchool">School</label>
+  						<input type="text" class="form-control" id="inputSchool" name="school" placeholder="School">
+  					</div>
+  					<div class="col-sm">
+  						<label class="form-check-label" for="inputYear">Year</label>
+  						<input type="text" class="form-control" id="inputYear" name="year" placeholder="Year">
+  					</div>
+  					<div class="col-sm">
+  						<label class="form-check-label" for="inputCourse">Course/Strand</label>
+  						<input type="text" class="form-control" id="inputCourse" name="course" placeholder="Course/Strand">
+  					</div>
+  				</div>
+  				<div class="row">
+  					<div class="col-sm">
+  						<label for="inputEmail">Email address</label>
+    					<input type="email" class="form-control" id="inputEmail" name="email" placeholder="mail@example.com">
+  					</div>
+  					<div class="col-sm">
+  						<label for="inputMobileno">Mobile Number</label>
+    					<input type="text" class="form-control" id="inputMobileno" name="mobileno" placeholder="ex. 09xxxxxxxxx">
+  					</div>
+   					<div class="col-sm">
+  						<label for="inputFacebookid">Facebook ID</label>
+    					<input type="text" class="form-control" id="inputFacebookid" name="facebook_id" placeholder="ex. gcfyouthlive">
+  					</div>
+  				</div>
+  				<div class="row">
+  					<div class="col-4">
+						<div class="col-sm">
+  							<label class="control-label col-form-label">Shirt Size</label>
+  							<div class="form-check">
+  								<input class="form-check-input" type="radio" name="inputShirtsize" id="inputShirtsize1" value="xs" checked>
+  								<label class="form-check-label" for="inputGender1">Extra Small</label>
+  							</div>
+  							<div class="form-check">
+  								<input class="form-check-input" type="radio" name="inputShirtsize" id="inputShirtsize2" value="s">
+  								<label class="form-check-label" for="inputGender2">Small</label>
+							</div>
+							<div class="form-check">
+  								<input class="form-check-input" type="radio" name="inputShirtsize" id="inputShirtsize3" value="m">
+  								<label class="form-check-label" for="inputGender2">Medium</label>
+							</div>
+							<div class="form-check">
+  								<input class="form-check-input" type="radio" name="inputShirtsize" id="inputShirtsize3" value="l">
+  								<label class="form-check-label" for="inputGender2">Large</label>
+							</div>
+							<div class="form-check">
+  								<input class="form-check-input" type="radio" name="inputShirtsize" id="inputShirtsize4" value="xl">
+  								<label class="form-check-label" for="inputGender2">Extra Large</label>
+							</div>
+  						</div>
+  					</div>
+  					<div class="col-8">
+  						<label for="inputChurch">Church</label>
+    					<input type="text" class="form-control" id="inputChurch" name="church" placeholder="Church">
+  					</div>
+  				</div>
+  				<div class="row">
+  					<div class="col-sm">
+  						<label for="inputGcfmember">Are you a member of GCF?</label>
+    					<select class="form-control" id="inputGcfmember" name="gcf_member">
+      						<option>Yes</option>
+      						<option>No</option>
+      					</select>
+      				</div>
+      				<div class="col-sm">
+      					<label for="inputGcfservice">Which Service do you attend?</label>
+    					<select class="form-control" id="inputGcfservice" name="gcf_service">
+      						<option disabled>Saturday Services</option>
+      						<option>5:00 Youth Service</option>
+      						<option>6:00 Traditional Service</option>
+      						<option disabled>Sunday Services</option>
+      						<option>8:00 Worship Service</option>
+      						<option>10:30 Worship Service</option>
+      						<option>3:00 Tagalog Worship Service</option>
+      						<option>5:30 Vesper Service</option>
+      					</select>
+      				</div>
+      				<div class="col-sm">
+      					<label for="inputYouthgroup">Are you part of a Y-Group?</label>
+    					<select class="form-control" id="inputYouthgroup" name="youth_group">
+      						<option>Yes</option>
+      						<option>No</option>
+      					</select>
+      				</div>
+      			</div>
+      			<div class="row">
+      				<div class="col-sm">
+      					<label for="inputYouthgroupleader">Who's your Y-Group Leader?</label>
+    					<input type="text" class="form-control" id="inputYouthgroupleader" name="youth_group_leader" placeholder="Leave blank if none">
+      				</div>
+      				<!-- Suggest turning into dropdown for uniformity of responses -->
+      				<div class="col-sm">
+      					<label for="inputFirsttime">Is this your first time in camp?</label>
+    					<select class="form-control" id="inputFirsttime" name="camp_first_time">
+      						<option>Yes</option>
+      						<option>No</option>
+      					</select>
+      				</div>
+      			</div>
+      			<br>
+      			<h4>Emergency Details</h4>
+      			<div class="row">
+      				<div class="col-sm">
+      					<label for="inputAllergies">Alleriges</label>
+    					<input type="text" class="form-control" id="inputAllergies" name="allergies" placeholder="e.g. Diary, Eggs, etc.">
+      				</div>
+      				<div class="col-sm">
+      					<label for="inputMedications">Medications</label>
+    					<input type="text" class="form-control" id="inputMedications" name="medications">
+      				</div>      				
+      			</div>
+      			<div class="row">
+      				<div class="col-sm">
+      					<label for="inputNotes">Anything else we need to know?</label>
+    					<textarea class="form-control" id="inputNotes" name="notes" rows="3"></textarea>
+      				</div>
+      			</div>
+      			<h4>Parent's Details</h4>
+      			<div class="row">
+      				<div class="col-6">
+      					<h5>Mother</h5>
+      					<div class="col-sm">
+      						<label for="inputMotherName">Name</label>
+    						<input type="text" class="form-control" id="inputMotherName" name="mother_name">
+    						<label for="inputMedications">Birthday</label>
+    						<input class="form-control" id="inputMotherBirthhday" name="date" placeholder="MM/DD/YYY" type="text"/>
+    						<label for="inputMedications">Contact No.</label>
+    						<input type="text" class="form-control" id="inputMotherContactno" name="mother_contactno" placeholder="ex. 09xxxxxxxxx">
+      					</div>
+      				</div>
+      				<div class="col-6">
+      					<h5>Father</h5>
+      					<div class="col-sm">
+      						<label for="inputFatherName">Name</label>
+    						<input type="text" class="form-control" id="inputFatherName" name="father_name">
+    						<label for="inputMedications">Birthday</label>
+    						<input class="form-control" id="inputFatherBirthhday" name="date" placeholder="MM/DD/YYY" type="text"/>
+    						<label for="inputMedications">Contact No.</label>
+    						<input type="text" class="form-control" id="inputFatherContactno" name="father_contactno" placeholder="ex. 09xxxxxxxxx">
+      					</div>
+      				</div>
+      			</div>
+      			<br>
+      			<button type="submit" class="btn btn-primary">Submit</button>
+      			<br>
+			</form>
+ 		</div>
+ 	</div>
+  	<br>
+  	<div class="footer container-fluid py-4 clearfix bg-dark ">
+    	<div class="float-left" style="color: white">
+      		<p>
+        	<b>Greenhills Christian Fellowship</b>
+        	<br>Ruby corner Garnet Roads, Ortigas Center,
+        	<br>Pasig City, Philippines 1605
+     		 </p>
+    	</div>
+    	<div class="float-right p-3">
+      		<span class="fa-layers fa-fw fa-3x"><a href="https://facebook.com/gcfyouthlive">
+        		<i class="fas fa-circle" style="color:#EF694B"></i>
+        		<i class="fab fa-facebook-f fa-inverse" data-fa-transform="shrink-6"></i>
+      		</a></span>
+      		<span class="fa-layers fa-fw fa-3x"><a href="https://www.instagram.com/gcfyouthlive/">
+        		<i class="fas fa-circle" style="color:#EF694B"></i>
+        		<i class="fab fa-instagram fa-inverse" data-fa-transform="shrink-6"></i>
+      		</a></span>
+      		<span class="fa-layers fa-fw fa-3x"><a href="mailto:youthlive@gcf.org.ph">
+        		<i class="fas fa-circle" style="color:#EF694B"></i>
+        		<i class="fas fa-envelope fa-inverse" data-fa-transform="shrink-7"></i>
+      		</a></span>
+    	</div>
+  	</div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- Bootstrap date picker plugin -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      var date_input=$('input[name="date"]'); //our date input has the name "date"
+      var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+      var options={
+        format: 'mm/dd/yyyy',
+        container: container,
+        todayHighlight: true,
+        autoclose: true,
+      };
+      date_input.datepicker(options);
+    })
+</script>
+
+
+</body>
+</html>
