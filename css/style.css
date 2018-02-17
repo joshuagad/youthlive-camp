@@ -27,7 +27,7 @@ body {
 
 @media (min-width: 576px) {
   #camp.banner {
-    background-image: url("../img/banner-v1.png");
+    background-image: url("../img/camptitleweb.png");
 		height: 100vh;
   }
 }
