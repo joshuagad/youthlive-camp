@@ -37,7 +37,7 @@
   				<div class="row">
   					<div class="col-sm">
         					<label class="control-label col-form-label" for="birthdate">Birthday</label>
-        					<input class="form-control" id="inputBirthdate" name="date" placeholder="MM/DD/YYY" type="text"/>
+        					<input class="form-control" id="inputBirthdate" name="birthday" placeholder="MM/DD/YYY" type="text"/>
   					</div>
   					<div class="col-sm">
   						<label class="control-label col-form-label">Gender</label>
@@ -158,7 +158,7 @@
       			<div class="row">
       				<div class="col-sm">
       					<label for="inputAllergies">Alleriges</label>
-    					<input type="text" class="form-control" id="inputAllergies" name="allergies" placeholder="e.g. Diary, Eggs, etc.">
+    					<input type="text" class="form-control" id="inputAllergies" name="allergies" placeholder="e.g. Dairy, Eggs, etc.">
       				</div>
       				<div class="col-sm">
       					<label for="inputMedications">Medications</label>
@@ -179,7 +179,7 @@
       						<label for="inputMotherName">Name</label>
     						<input type="text" class="form-control" id="inputMotherName" name="mother_name">
     						<label for="inputMedications">Birthday</label>
-    						<input class="form-control" id="inputMotherBirthhday" name="date" placeholder="MM/DD/YYY" type="text"/>
+    						<input class="form-control" id="inputMotherBirthhday" name="mother_birthday" placeholder="MM/DD/YYY" type="text"/>
     						<label for="inputMedications">Contact No.</label>
     						<input type="text" class="form-control" id="inputMotherContactno" name="mother_contactno" placeholder="ex. 09xxxxxxxxx">
       					</div>
@@ -190,7 +190,7 @@
       						<label for="inputFatherName">Name</label>
     						<input type="text" class="form-control" id="inputFatherName" name="father_name">
     						<label for="inputMedications">Birthday</label>
-    						<input class="form-control" id="inputFatherBirthhday" name="date" placeholder="MM/DD/YYY" type="text"/>
+    						<input class="form-control" id="inputFatherBirthhday" name="father_birthday" placeholder="MM/DD/YYY" type="text"/>
     						<label for="inputMedications">Contact No.</label>
     						<input type="text" class="form-control" id="inputFatherContactno" name="father_contactno" placeholder="ex. 09xxxxxxxxx">
       					</div>
@@ -235,7 +235,10 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
   <script>
     $(document).ready(function(){
-      var date_input=$('input[name="date"]'); //our date input has the name "date"
+    	// Honestly dont know how to do JS, pls fix -Hanz
+      var date_input=$('input[name="birthday"]');
+      var date_input2=$('input[name="mother_birthday"]');
+      var date_input3=$('input[name="father_birthday"]');
       var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
       var options={
         format: 'mm/dd/yyyy',
@@ -243,7 +246,10 @@
         todayHighlight: true,
         autoclose: true,
       };
+      // Same here pls fix -Hanz
       date_input.datepicker(options);
+      date_input2.datepicker(options);
+      date_input3.datepicker(options);
     })
 </script>
 
