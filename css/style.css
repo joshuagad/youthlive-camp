@@ -20,14 +20,14 @@ body {
 }
 
 #camp.banner {
-  background-image: url("../img/banner-v2.png");
+  background-image: url("../img/banner-mobile.png");
 	height: 100vh;
 	position: relative;
 }
 
 @media (min-width: 576px) {
   #camp.banner {
-    background-image: url("../img/camptitleweb.png");
+    background-image: url("../img/banner-web.png");
 		height: 100vh;
   }
 }
@@ -59,6 +59,10 @@ body {
 
 a.question {
 	font-weight: 700
+}
+
+a.question > p {
+	margin-bottom: 0;
 }
 
 #hsregform {
