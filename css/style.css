@@ -55,11 +55,9 @@ body {
 	margin-bottom: 5%;
 	width: 30px;
 	margin-left: -15px;
-	/* bottom: 0;
-	margin-bottom: 4rem; */
 }
 
-.question {
+a.question {
 	font-weight: 700
 }
 
