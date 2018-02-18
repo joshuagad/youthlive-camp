@@ -14,32 +14,32 @@
 	<div class="container mt-3">
  		<div id="form-header" class="col-12 text-center">
  			<h3>High School Camp Sign-Up Form</h3>
- 			<p>Hello! This is the first step on signing-up for CampLIVE: Verified. Please fill up this form with the necessary information. Afterwards, print the pdf, let your parents sign the consent form, and pay for the camp fee! See you in camp! TEMPORARY TEXT</p>
+ 			<p>Hello! This is the first step on signing-up for CampLIVE: Verified. Please fill up this form with the necessary information. Afterwards, print the pdf, let your parents sign the consent form, and pay for the camp fee! See you in camp!</p>
  		</div>
  		<div id="form-body" class="col-12">
  			<form>
  				<h4>General Details</h4>
  				<label class="control-label">Name</label>
 				<div class="row">
-    				<div class="col-sm">
+    				<div class="col-sm pb-2">
       					<input type="text" class="form-control" id="inputFirstname" name="first_name" placeholder="First name">
     				</div>
-    				<div class="col-sm">
+    				<div class="col-sm pb-2">
     					<input type="text" class="form-control" id="inputNickname" name="nickname"  placeholder="Nickname">
     				</div>
-    				<div class="col-sm">
+    				<div class="col-sm pb-2">
       					<input type="text" class="form-control" id="inputLastname" name="last_name"  placeholder="Last name">
     				</div>
-    				<div class="col-sm">
+    				<div class="col-sm pb-2">
     					<input type="text" class="form-control" placeholder="Middle initial">
     				</div>
   				</div>
   				<div class="row">
-  					<div class="col-sm">
+  					<div class="col-sm pb-2">
         					<label class="control-label col-form-label" for="birthdate">Birthday</label>
         					<input class="form-control" id="inputBirthdate" name="birthday" placeholder="MM/DD/YYY" type="text"/>
   					</div>
-  					<div class="col-sm">
+  					<div class="col-sm pb-2">
   						<label class="control-label col-form-label">Gender</label>
   						<div class="form-check">
   							<input class="form-check-input" type="radio" name="inputGender" id="inputGender" value="male" checked>
@@ -52,73 +52,58 @@
   					</div>
   				</div>
   				<div class="row">
-  					<div class="col-sm">
+  					<div class="col-sm pb-2">
   						<label class="form-check-label" for="inputSchool">School</label>
   						<input type="text" class="form-control" id="inputSchool" name="school" placeholder="School">
   					</div>
-  					<div class="col-sm">
+  					<div class="col-sm pb-2">
   						<label class="form-check-label" for="inputYear">Year</label>
   						<input type="text" class="form-control" id="inputYear" name="year" placeholder="Year">
   					</div>
-  					<div class="col-sm">
+  					<div class="col-sm pb-2">
   						<label class="form-check-label" for="inputCourse">Course/Strand</label>
   						<input type="text" class="form-control" id="inputCourse" name="course" placeholder="Course/Strand">
   					</div>
   				</div>
   				<div class="row">
-  					<div class="col-sm">
+  					<div class="col-sm pb-2">
   						<label for="inputEmail">Email address</label>
     					<input type="email" class="form-control" id="inputEmail" name="email" placeholder="mail@example.com">
   					</div>
-  					<div class="col-sm">
+  					<div class="col-sm pb-2">
   						<label for="inputMobileno">Mobile Number</label>
     					<input type="text" class="form-control" id="inputMobileno" name="mobileno" placeholder="ex. 09xxxxxxxxx">
   					</div>
-   					<div class="col-sm">
+   					<div class="col-sm pb-2">
   						<label for="inputFacebookid">Facebook ID</label>
     					<input type="text" class="form-control" id="inputFacebookid" name="facebook_id" placeholder="ex. gcfyouthlive">
   					</div>
   				</div>
   				<div class="row">
-  					<div class="col-4">
-						<div class="col-sm">
+  					<div class="col-4 pb-2">
   							<label class="control-label col-form-label">Shirt Size</label>
-  							<div class="form-check">
-  								<input class="form-check-input" type="radio" name="inputShirtsize" id="inputShirtsize1" value="xs" checked>
-  								<label class="form-check-label" for="inputGender1">Extra Small</label>
-  							</div>
-  							<div class="form-check">
-  								<input class="form-check-input" type="radio" name="inputShirtsize" id="inputShirtsize2" value="s">
-  								<label class="form-check-label" for="inputGender2">Small</label>
-							</div>
-							<div class="form-check">
-  								<input class="form-check-input" type="radio" name="inputShirtsize" id="inputShirtsize3" value="m">
-  								<label class="form-check-label" for="inputGender2">Medium</label>
-							</div>
-							<div class="form-check">
-  								<input class="form-check-input" type="radio" name="inputShirtsize" id="inputShirtsize3" value="l">
-  								<label class="form-check-label" for="inputGender2">Large</label>
-							</div>
-							<div class="form-check">
-  								<input class="form-check-input" type="radio" name="inputShirtsize" id="inputShirtsize4" value="xl">
-  								<label class="form-check-label" for="inputGender2">Extra Large</label>
-							</div>
-  						</div>
+  							<select class="form-control" id="inputShirtsize" name="shirt_size">
+      							<option>Extra Small</option>
+      							<option>Small</option>
+      							<option>Medium</option>
+      							<option>Large</option>
+      							<option>Extra Large</option>
+      						</select>
   					</div>
-  					<div class="col-8">
+  					<div class="col-8 pb-2">
   						<label for="inputChurch">Church</label>
     					<input type="text" class="form-control" id="inputChurch" name="church" placeholder="Church">
   					</div>
   				</div>
   				<div class="row">
-  					<div class="col-sm">
+  					<div class="col-sm pb-2">
   						<label for="inputGcfmember">Are you a member of GCF?</label>
     					<select class="form-control" id="inputGcfmember" name="gcf_member">
       						<option>Yes</option>
       						<option>No</option>
       					</select>
       				</div>
-      				<div class="col-sm">
+      				<div class="col-sm pb-2">
       					<label for="inputGcfservice">Which Service do you attend?</label>
     					<select class="form-control" id="inputGcfservice" name="gcf_service">
       						<option disabled>Saturday Services</option>
@@ -131,7 +116,7 @@
       						<option>5:30 Vesper Service</option>
       					</select>
       				</div>
-      				<div class="col-sm">
+      				<div class="col-sm pb-2">
       					<label for="inputYouthgroup">Are you part of a Y-Group?</label>
     					<select class="form-control" id="inputYouthgroup" name="youth_group">
       						<option>Yes</option>
@@ -140,12 +125,12 @@
       				</div>
       			</div>
       			<div class="row">
-      				<div class="col-sm">
+      				<div class="col-sm pb-2">
       					<label for="inputYouthgroupleader">Who's your Y-Group Leader?</label>
     					<input type="text" class="form-control" id="inputYouthgroupleader" name="youth_group_leader" placeholder="Leave blank if none">
       				</div>
       				<!-- Suggest turning into dropdown for uniformity of responses -->
-      				<div class="col-sm">
+      				<div class="col-sm pb-2">
       					<label for="inputFirsttime">Is this your first time in camp?</label>
     					<select class="form-control" id="inputFirsttime" name="camp_first_time">
       						<option>Yes</option>
@@ -156,17 +141,17 @@
       			<br>
       			<h4>Emergency Details</h4>
       			<div class="row">
-      				<div class="col-sm">
+      				<div class="col-sm pb-2">
       					<label for="inputAllergies">Alleriges</label>
     					<input type="text" class="form-control" id="inputAllergies" name="allergies" placeholder="e.g. Dairy, Eggs, etc.">
       				</div>
-      				<div class="col-sm">
+      				<div class="col-sm pb-2">
       					<label for="inputMedications">Medications</label>
     					<input type="text" class="form-control" id="inputMedications" name="medications">
       				</div>      				
       			</div>
       			<div class="row">
-      				<div class="col-sm">
+      				<div class="col-sm pb-2">
       					<label for="inputNotes">Anything else we need to know?</label>
     					<textarea class="form-control" id="inputNotes" name="notes" rows="3"></textarea>
       				</div>
@@ -175,23 +160,23 @@
       			<div class="row">
       				<div class="col-6">
       					<h5>Mother</h5>
-      					<div class="col-sm">
+      					<div class="col-sm pb-2">
       						<label for="inputMotherName">Name</label>
     						<input type="text" class="form-control" id="inputMotherName" name="mother_name">
-    						<label for="inputMedications">Birthday</label>
+    						<label for="inputMotherBirthday">Birthday</label>
     						<input class="form-control" id="inputMotherBirthhday" name="mother_birthday" placeholder="MM/DD/YYY" type="text"/>
-    						<label for="inputMedications">Contact No.</label>
+    						<label for="inputMotherContactno">Contact No.</label>
     						<input type="text" class="form-control" id="inputMotherContactno" name="mother_contactno" placeholder="ex. 09xxxxxxxxx">
       					</div>
       				</div>
       				<div class="col-6">
       					<h5>Father</h5>
-      					<div class="col-sm">
+      					<div class="col-sm pb-2">
       						<label for="inputFatherName">Name</label>
     						<input type="text" class="form-control" id="inputFatherName" name="father_name">
-    						<label for="inputMedications">Birthday</label>
+    						<label for="inputFatherBirthhday">Birthday</label>
     						<input class="form-control" id="inputFatherBirthhday" name="father_birthday" placeholder="MM/DD/YYY" type="text"/>
-    						<label for="inputMedications">Contact No.</label>
+    						<label for="inputFatherContactno">Contact No.</label>
     						<input type="text" class="form-control" id="inputFatherContactno" name="father_contactno" placeholder="ex. 09xxxxxxxxx">
       					</div>
       				</div>
