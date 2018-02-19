@@ -57,7 +57,7 @@ body {
 .arrow-down {
 	position: absolute;
 	bottom: 0;
-	margin-bottom: 15%;
+	margin-bottom: 60px;
 	width: 30px;
 	margin-left: -15px;
 }
