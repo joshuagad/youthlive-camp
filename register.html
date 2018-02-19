@@ -11,35 +11,95 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
 </head>
 <body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-sm navbar-dark clearfix bg-dark">
+    <a class="navbar-brand col" href="/"><img src="img/camp-logo-white.svg" width="25%"></a>
+    <button class="navbar-toggler col-2" type="button" data-toggle="collapse" data-target="#navbarCollapsible" aria-controls="navbarCollapsible" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarCollapsible">
+    <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Register</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">(Placeholder)</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">(Placeholder 2)</a>
+    </li>
+    </ul>
+    </div>    
+  </nav>
+  <!-- Banner -->
+	<div class="justify-content-center mb-3">
+		<img src="img/banner-web-form.png" width="100%">
+	</div>
+  <!-- Form Header and Instructions -->
 	<div class="container mt-3">
- 		<div id="form-header" class="col-12 text-center">
- 			<h3>High School Camp Sign-Up Form</h3>
- 			<p>Hello! This is the first step on signing-up for CampLIVE: Verified. Please fill up this form with the necessary information. Afterwards, print the pdf, let your parents sign the consent form, and pay for the camp fee! See you in camp! TEMPORARY TEXT</p>
+ 		<div id="form-header" class="text-center">
+ 			<h2 class="text-lowercase">high school camp sign-up form</h2>
+ 			<div class="media mx-auto">
+	 			<div class="row">
+	 				<div class="col-12 col-sm-6 col-md-3 col-lg-3">
+						<img src="img/icon-1.svg" width="50%">
+			 			<div class="media-body">
+              <h4>1.</h4>
+			 				<p>fill out the online form below</p>
+			 			</div>
+		 			</div>
+		 			<div class="col-12 col-sm-6 col-md-3 col-lg-3">
+			 			<img src="img/icon-2.svg" width="50%">
+			 			<div class="media-body">
+            <h4>2.</h4>              
+			 				<p>check email for waiver & OR code</p>
+			 			</div>
+		 			</div>
+		 			<div class="col-12 col-sm-6 col-md-3 col-lg-3">
+			 			<img src="img/icon-3.svg" width="50%">
+			 			<div class="media-body">
+              <h4>3.</h4>
+			 				<p>print and sign waiver</p>
+			 			</div>
+			 		</div>
+			 		<div class="col-12 col-sm-6 col-md-3 col-lg-3">
+			 			<img src="img/icon-4.svg" width="50%">
+			 			<div class="media-body">
+              <h4 class="align-self-start">4.</h4>
+			 				<p>present OR code, signed waiver, and pay camp fee</p>
+			 			</div>
+			 		</div>
+	 			</div>
+	 		</div>
  		</div>
  		<div id="form-body" class="col-12">
- 			<form>
+    <!-- Form body -->
+ 			<form id="camp-form">
  				<h4>General Details</h4>
  				<label class="control-label">Name</label>
 				<div class="row">
-    				<div class="col-sm">
-      					<input type="text" class="form-control" id="inputFirstname" name="first_name" placeholder="First name">
+    				<div class="col-sm pb-2">
+      					<input required type="text" class="form-control" id="inputFirstname" name="first_name" placeholder="First name">
     				</div>
-    				<div class="col-sm">
-    					<input type="text" class="form-control" id="inputNickname" name="nickname"  placeholder="Nickname">
+    				<div class="col-sm pb-2">
+    					<input required type="text" class="form-control" id="inputNickname" name="nickname"  placeholder="Nickname">
     				</div>
-    				<div class="col-sm">
-      					<input type="text" class="form-control" id="inputLastname" name="last_name"  placeholder="Last name">
+    				<div class="col-sm pb-2">
+      					<input required type="text" class="form-control" id="inputLastname" name="last_name"  placeholder="Last name">
     				</div>
-    				<div class="col-sm">
-    					<input type="text" class="form-control" placeholder="Middle initial">
+    				<div class="col-sm pb-2">
+    					<input  required type="text" class="form-control" placeholder="Middle initial">
     				</div>
   				</div>
   				<div class="row">
-  					<div class="col-sm">
+  					<div class="col-sm pb-2">
         					<label class="control-label col-form-label" for="birthdate">Birthday</label>
-        					<input class="form-control" id="inputBirthdate" name="date" placeholder="MM/DD/YYY" type="text"/>
+        					<input required class="form-control" id="inputBirthdate" name="birthday" placeholder="MM/DD/YYY" type="text"/>
   					</div>
-  					<div class="col-sm">
+  					<div class="col-sm pb-2">
   						<label class="control-label col-form-label">Gender</label>
   						<div class="form-check">
   							<input class="form-check-input" type="radio" name="inputGender" id="inputGender" value="male" checked>
@@ -52,73 +112,58 @@
   					</div>
   				</div>
   				<div class="row">
-  					<div class="col-sm">
+  					<div class="col-sm pb-2">
   						<label class="form-check-label" for="inputSchool">School</label>
-  						<input type="text" class="form-control" id="inputSchool" name="school" placeholder="School">
+  						<input required type="text" class="form-control" id="inputSchool" name="school" placeholder="School">
   					</div>
-  					<div class="col-sm">
+  					<div class="col-sm pb-2">
   						<label class="form-check-label" for="inputYear">Year</label>
-  						<input type="text" class="form-control" id="inputYear" name="year" placeholder="Year">
+  						<input required type="text" class="form-control" id="inputYear" name="year" placeholder="Year">
   					</div>
-  					<div class="col-sm">
+  					<div class="col-sm pb-2">
   						<label class="form-check-label" for="inputCourse">Course/Strand</label>
-  						<input type="text" class="form-control" id="inputCourse" name="course" placeholder="Course/Strand">
+  						<input required type="text" class="form-control" id="inputCourse" name="course" placeholder="Course/Strand">
   					</div>
   				</div>
   				<div class="row">
-  					<div class="col-sm">
+  					<div class="col-sm pb-2">
   						<label for="inputEmail">Email address</label>
-    					<input type="email" class="form-control" id="inputEmail" name="email" placeholder="mail@example.com">
+    					<input required type="email" class="form-control" id="inputEmail" name="email" placeholder="mail@example.com">
   					</div>
-  					<div class="col-sm">
+  					<div class="col-sm pb-2">
   						<label for="inputMobileno">Mobile Number</label>
-    					<input type="text" class="form-control" id="inputMobileno" name="mobileno" placeholder="ex. 09xxxxxxxxx">
+    					<input required type="text" class="form-control" id="inputMobileno" name="mobileno" placeholder="ex. 09xxxxxxxxx">
   					</div>
-   					<div class="col-sm">
+   					<div class="col-sm pb-2">
   						<label for="inputFacebookid">Facebook ID</label>
-    					<input type="text" class="form-control" id="inputFacebookid" name="facebook_id" placeholder="ex. gcfyouthlive">
+    					<input required type="text" class="form-control" id="inputFacebookid" name="facebook_id" placeholder="ex. gcfyouthlive">
   					</div>
   				</div>
   				<div class="row">
-  					<div class="col-4">
-						<div class="col-sm">
+  					<div class="col-4 pb-2">
   							<label class="control-label col-form-label">Shirt Size</label>
-  							<div class="form-check">
-  								<input class="form-check-input" type="radio" name="inputShirtsize" id="inputShirtsize1" value="xs" checked>
-  								<label class="form-check-label" for="inputGender1">Extra Small</label>
-  							</div>
-  							<div class="form-check">
-  								<input class="form-check-input" type="radio" name="inputShirtsize" id="inputShirtsize2" value="s">
-  								<label class="form-check-label" for="inputGender2">Small</label>
-							</div>
-							<div class="form-check">
-  								<input class="form-check-input" type="radio" name="inputShirtsize" id="inputShirtsize3" value="m">
-  								<label class="form-check-label" for="inputGender2">Medium</label>
-							</div>
-							<div class="form-check">
-  								<input class="form-check-input" type="radio" name="inputShirtsize" id="inputShirtsize3" value="l">
-  								<label class="form-check-label" for="inputGender2">Large</label>
-							</div>
-							<div class="form-check">
-  								<input class="form-check-input" type="radio" name="inputShirtsize" id="inputShirtsize4" value="xl">
-  								<label class="form-check-label" for="inputGender2">Extra Large</label>
-							</div>
-  						</div>
+  							<select required class="form-control" id="inputShirtsize" name="shirt_size">
+      							<option>Extra Small</option>
+      							<option>Small</option>
+      							<option>Medium</option>
+      							<option>Large</option>
+      							<option>Extra Large</option>
+      						</select>
   					</div>
-  					<div class="col-8">
+  					<div class="col-8 pb-2">
   						<label for="inputChurch">Church</label>
-    					<input type="text" class="form-control" id="inputChurch" name="church" placeholder="Church">
+    					<input required type="text" class="form-control" id="inputChurch" name="church" placeholder="Church">
   					</div>
   				</div>
   				<div class="row">
-  					<div class="col-sm">
+  					<div class="col-sm pb-2">
   						<label for="inputGcfmember">Are you a member of GCF?</label>
     					<select class="form-control" id="inputGcfmember" name="gcf_member">
       						<option>Yes</option>
       						<option>No</option>
       					</select>
       				</div>
-      				<div class="col-sm">
+      				<div class="col-sm pb-2">
       					<label for="inputGcfservice">Which Service do you attend?</label>
     					<select class="form-control" id="inputGcfservice" name="gcf_service">
       						<option disabled>Saturday Services</option>
@@ -131,7 +176,7 @@
       						<option>5:30 Vesper Service</option>
       					</select>
       				</div>
-      				<div class="col-sm">
+      				<div class="col-sm pb-2">
       					<label for="inputYouthgroup">Are you part of a Y-Group?</label>
     					<select class="form-control" id="inputYouthgroup" name="youth_group">
       						<option>Yes</option>
@@ -140,12 +185,12 @@
       				</div>
       			</div>
       			<div class="row">
-      				<div class="col-sm">
+      				<div class="col-sm pb-2">
       					<label for="inputYouthgroupleader">Who's your Y-Group Leader?</label>
     					<input type="text" class="form-control" id="inputYouthgroupleader" name="youth_group_leader" placeholder="Leave blank if none">
       				</div>
       				<!-- Suggest turning into dropdown for uniformity of responses -->
-      				<div class="col-sm">
+      				<div class="col-sm pb-2">
       					<label for="inputFirsttime">Is this your first time in camp?</label>
     					<select class="form-control" id="inputFirsttime" name="camp_first_time">
       						<option>Yes</option>
@@ -156,17 +201,17 @@
       			<br>
       			<h4>Emergency Details</h4>
       			<div class="row">
-      				<div class="col-sm">
+      				<div class="col-sm pb-2">
       					<label for="inputAllergies">Alleriges</label>
-    					<input type="text" class="form-control" id="inputAllergies" name="allergies" placeholder="e.g. Diary, Eggs, etc.">
+    					<input type="text" class="form-control" id="inputAllergies" name="allergies" placeholder="e.g. Dairy, Eggs, etc.">
       				</div>
-      				<div class="col-sm">
+      				<div class="col-sm pb-2">
       					<label for="inputMedications">Medications</label>
     					<input type="text" class="form-control" id="inputMedications" name="medications">
-      				</div>      				
+      				</div>
       			</div>
       			<div class="row">
-      				<div class="col-sm">
+      				<div class="col-sm pb-2">
       					<label for="inputNotes">Anything else we need to know?</label>
     					<textarea class="form-control" id="inputNotes" name="notes" rows="3"></textarea>
       				</div>
@@ -175,33 +220,34 @@
       			<div class="row">
       				<div class="col-6">
       					<h5>Mother</h5>
-      					<div class="col-sm">
+      					<div class="col-sm pb-2">
       						<label for="inputMotherName">Name</label>
-    						<input type="text" class="form-control" id="inputMotherName" name="mother_name">
-    						<label for="inputMedications">Birthday</label>
-    						<input class="form-control" id="inputMotherBirthhday" name="date" placeholder="MM/DD/YYY" type="text"/>
-    						<label for="inputMedications">Contact No.</label>
-    						<input type="text" class="form-control" id="inputMotherContactno" name="mother_contactno" placeholder="ex. 09xxxxxxxxx">
+    						<input required type="text" class="form-control" id="inputMotherName" name="mother_name">
+    						<label for="inputMotherBirthday">Birthday</label>
+    						<input required class="form-control" id="inputMotherBirthhday" name="mother_birthday" placeholder="MM/DD/YYY" type="text"/>
+    						<label for="inputMotherContactno">Contact No.</label>
+    						<input required type="text" class="form-control" id="inputMotherContactno" name="mother_contactno" placeholder="ex. 09xxxxxxxxx">
       					</div>
       				</div>
       				<div class="col-6">
       					<h5>Father</h5>
-      					<div class="col-sm">
+      					<div class="col-sm pb-2">
       						<label for="inputFatherName">Name</label>
-    						<input type="text" class="form-control" id="inputFatherName" name="father_name">
-    						<label for="inputMedications">Birthday</label>
-    						<input class="form-control" id="inputFatherBirthhday" name="date" placeholder="MM/DD/YYY" type="text"/>
-    						<label for="inputMedications">Contact No.</label>
-    						<input type="text" class="form-control" id="inputFatherContactno" name="father_contactno" placeholder="ex. 09xxxxxxxxx">
+    						<input required type="text" class="form-control" id="inputFatherName" name="father_name">
+    						<label for="inputFatherBirthhday">Birthday</label>
+    						<input required class="form-control" id="inputFatherBirthhday" name="father_birthday" placeholder="MM/DD/YYY" type="text"/>
+    						<label for="inputFatherContactno">Contact No.</label>
+    						<input required type="text" class="form-control" id="inputFatherContactno" name="father_contactno" placeholder="ex. 09xxxxxxxxx">
       					</div>
       				</div>
       			</div>
       			<br>
-      			<button type="submit" class="btn btn-primary">Submit</button>
+      			<button id="form-sub" type="submit" class="form-sub btn btn-primary">Submit</button>
       			<br>
 			</form>
  		</div>
  	</div>
+  <!-- Footer -->
   	<br>
   	<div class="footer container-fluid py-4 clearfix bg-dark ">
     	<div class="float-left" style="color: white">
@@ -235,7 +281,10 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
   <script>
     $(document).ready(function(){
-      var date_input=$('input[name="date"]'); //our date input has the name "date"
+    	// Honestly dont know how to do JS, pls fix -Hanz
+      var date_input=$('input[name="birthday"]');
+      var date_input2=$('input[name="mother_birthday"]');
+      var date_input3=$('input[name="father_birthday"]');
       var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
       var options={
         format: 'mm/dd/yyyy',
@@ -243,8 +292,17 @@
         todayHighlight: true,
         autoclose: true,
       };
+      // Same here pls fix -Hanz
       date_input.datepicker(options);
+      date_input2.datepicker(options);
+      date_input3.datepicker(options);
     })
+
+    $( "form" ).submit(function( event ) {
+  		console.log( $( this ).serializeArray() );
+  		event.preventDefault();
+
+	});
 </script>
 
 
