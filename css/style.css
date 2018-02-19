@@ -44,10 +44,12 @@ body {
 	}
 }
 
-#faqs > ul > li {
-	padding-top: 1rem;
+#faqs ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-align: justify;
 }
-
 
 .arrow-down {
 	position: absolute;
@@ -57,12 +59,18 @@ body {
 	margin-left: -15px;
 }
 
-a.question {
-	margin-top: 20px;
+.question {
+	margin: 0.3rem 0;
+	display: flex;
 }
 
-a.question > p {
+.question p {
 	margin-bottom: 0;
+}
+
+#faqs .answer {
+	margin: 0.3rem 0;
+	padding: 0;
 }
 
 #hsregform {
