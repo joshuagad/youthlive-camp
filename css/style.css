@@ -52,13 +52,12 @@ body {
 	padding: 0;
 	margin: 0;
 	list-style: none;
-	//text-align: justify;
 }
 
 .arrow-down {
 	position: absolute;
 	bottom: 0;
-	margin-bottom: 5%;
+	margin-bottom: 15%;
 	width: 30px;
 	margin-left: -15px;
 }
@@ -79,7 +78,6 @@ body {
 
 #hsregform {
 	background-color: #DEECE2;
-	/* height: 100vh; */
 }
 
 input.form-control:disabled {
