@@ -1,3 +1,7 @@
+html, body {
+	height: 100%;
+}
+
 body {
 	font-family: 'Muli', sans-serif;
 	font-size: 16px;
@@ -21,20 +25,20 @@ body {
 
 #camp.banner {
   background-image: url("../img/banner-mobile.png");
-	height: 100vh;
+	height: 100%;
 	position: relative;
 }
 
 @media (min-width: 576px) {
   #camp.banner {
     background-image: url("../img/banner-web.png");
-		height: 100vh;
+		height: 100%;
   }
 }
 
 #living.banner {
 	background-image: url("../img/living.jpg");
-	height: 100vh;
+	height: 100%;
 	max-height: 360px;
 }
 
@@ -48,7 +52,7 @@ body {
 	padding: 0;
 	margin: 0;
 	list-style: none;
-	text-align: justify;
+	//text-align: justify;
 }
 
 .arrow-down {
@@ -85,4 +89,22 @@ input.form-control:disabled {
 
 a:hover {
 	cursor: pointer;
+}
+
+.container {
+	max-width: 720px;
+}
+
+.section-title {
+	text-align: center;
+}
+
+#details {
+	background-color: white;
+	color: black;
+}
+
+.camp-details {
+	text-transform: uppercase;
+	margin-bottom: 1rem;
 }
