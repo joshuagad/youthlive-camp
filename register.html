@@ -240,9 +240,12 @@
       date_input3.datepicker(options);
     })
 
-    $('.form-sub').click(function(){
-    	console.log("test");
-    });
+    $( "form" ).submit(function( event ) {
+  		console.log( $( this ).serializeArray() );
+  		event.preventDefault();
+
+	});
+	(function(console){
 </script>
 
 
