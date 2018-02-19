@@ -58,7 +58,6 @@ body {
 }
 
 a.question {
-	font-weight: 700;
 	margin-top: 20px;
 }
 
@@ -74,4 +73,8 @@ a.question > p {
 input.form-control:disabled {
 	color: #000000;
 	background-color: #ffffff;
+}
+
+a:hover {
+	cursor: pointer;
 }
