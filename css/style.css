@@ -13,6 +13,11 @@ body {
 	}
 }
 
+section {
+	padding: 1.5rem;
+	margin: 0;
+}
+
 .banner {
   background-position: center center;
   -webkit-background-size: cover;
@@ -104,5 +109,12 @@ a:hover {
 
 .camp-details {
 	text-transform: uppercase;
-	margin-bottom: 1rem;
+	padding-top: 1rem;
+}
+
+section#youthlive {
+	margin-top: 1.5rem;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
 }
